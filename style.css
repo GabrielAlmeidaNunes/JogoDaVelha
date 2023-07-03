@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor-de-fundo:#F2DEBA;
+    --cor-inicia-velha:#2e2b2b;
+    --cor-x:#4E6C50;
+    --cor-o:#820000;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(var(--cor-inicia-velha),var(--cor-de-fundo));
+}
+
+.caixa_jogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1em;
+    min-width: 80%;
+}
+
+.titulo_jogo{
+    font-size: 1.8rem;
+}
+
+.caixa_velha{
+    
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    max-width: 80%;
+}
+
+.tabela_velha{
+   border-collapse: collapse;
+}
+
+.colunas{
+    width: 110px;
+    height: 50px;
+    border: 1px solid var(--cor-de-fundo);
+    text-align: center;
+    background-color: var(--cor-inicia-velha);
+    cursor: pointer;
+}
+
+.resultado{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+}
+.resultado .reiniciar{
+    border: none;
+    cursor: pointer;
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+   
+
+.jogador1{
+    background: linear-gradient(var(--cor-inicia-velha),var(--cor-x));
+    color: var(--cor-inicia-velha);
+}
+
+.jogador2{
+    background: linear-gradient(var(--cor-inicia-velha),var(--cor-o));
+    color: var(--cor-inicia-velha);
+}
+
+.jogador_ganhador{
+    background: linear-gradient(var(--cor-inicia-velha),yellow);
+}
